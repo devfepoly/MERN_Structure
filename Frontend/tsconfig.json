@@ -1,0 +1,103 @@
+{
+    "compilerOptions": {
+        // Language and Environment
+        "target": "ES2020",
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "jsx": "react-jsx",
+        "useDefineForClassFields": true,
+        // Module Resolution
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        // Emit
+        "noEmit": true,
+        // Type Checking - Relaxed for migration
+        "strict": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": false,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": false,
+        // Path Aliases
+        "baseUrl": ".",
+        "ignoreDeprecations": "6.0",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            "@components": [
+                "./src/components"
+            ],
+            "@components/*": [
+                "./src/components/*"
+            ],
+            "@pages/*": [
+                "./src/pages/*"
+            ],
+            "@routes": [
+                "./src/routes"
+            ],
+            "@routes/*": [
+                "./src/routes/*"
+            ],
+            "@services": [
+                "./src/services"
+            ],
+            "@services/*": [
+                "./src/services/*"
+            ],
+            "@assets/*": [
+                "./src/assets/*"
+            ],
+            "@hooks": [
+                "./src/hooks"
+            ],
+            "@hooks/*": [
+                "./src/hooks/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ],
+            "@constants": [
+                "./src/constants"
+            ],
+            "@constants/*": [
+                "./src/constants/*"
+            ],
+            "@contexts/*": [
+                "./src/contexts/*"
+            ],
+            "@config/*": [
+                "./src/config/*"
+            ],
+            "@types": [
+                "./src/types"
+            ],
+            "@types/*": [
+                "./src/types/*"
+            ],
+            "@features/*": [
+                "./src/features/*"
+            ]
+        },
+        // Skip library check for faster builds
+        "skipLibCheck": true
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
