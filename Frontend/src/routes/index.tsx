@@ -1,6 +1,6 @@
-import { lazy, type ReactElement } from "react";
+import React, { lazy, type ReactElement } from "react";
 import { Route } from "react-router-dom";
-import type { RouteConfig, UserRole } from "@types";
+import type { UserRole } from "@types";
 
 // Lazy load components
 const ProtectedRoute = lazy(() => import("@components/ProtectedRoute"));

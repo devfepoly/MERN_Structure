@@ -3,6 +3,8 @@
  * Centralized TypeScript types for the application
  */
 
+import React from 'react';
+
 // ============= User & Auth Types =============
 
 export interface User {

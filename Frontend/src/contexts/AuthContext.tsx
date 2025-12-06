@@ -3,17 +3,24 @@
  * Global authentication state management
  */
 
-import { createContext, useContext } from 'react';
+import { createContext, useContext, memo, type FC, type ReactNode } from 'react';
 import { useAuth } from '@hooks';
 
 const AuthContext = createContext(null);
 
-export const AuthProvider = ({ children }) => {
+interface AuthProviderProps {
+    children: ReactNode;
+}
+
+export const AuthProvider: FC<AuthProviderProps> = memo(({ children }) => {
     const auth = useAuth();
 
     return <AuthContext.Provider value={auth}>{children}</AuthContext.Provider>;
-};
+});
 
+AuthProvider.displayName = 'AuthProvider';
+
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuthContext = () => {
     const context = useContext(AuthContext);
     if (!context) {
@@ -21,5 +28,3 @@ export const useAuthContext = () => {
     }
     return context;
 };
-
-export default AuthContext;

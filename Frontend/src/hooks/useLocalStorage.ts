@@ -3,7 +3,7 @@
  * Custom hook for localStorage with React state
  */
 
-import { useState, useEffect } from 'react';
+import { useState } from "react";
 
 export const useLocalStorage = (key, initialValue) => {
     // Get initial value from localStorage or use provided initial value
@@ -21,7 +21,8 @@ export const useLocalStorage = (key, initialValue) => {
     const setValue = (value) => {
         try {
             // Allow value to be a function so we have same API as useState
-            const valueToStore = value instanceof Function ? value(storedValue) : value;
+            const valueToStore =
+                value instanceof Function ? value(storedValue) : value;
             setStoredValue(valueToStore);
             window.localStorage.setItem(key, JSON.stringify(valueToStore));
         } catch (error) {
