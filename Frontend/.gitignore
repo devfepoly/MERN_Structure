@@ -24,13 +24,13 @@ dist-ssr
 *.sw?
 
 # Environment variables - SECURITY: Never commit these!
-.env
-.env.local
-.env.development
-.env.production
-.env.staging
-.env.test
-.env*.local
+# .env
+# .env.local
+# .env.development
+# .env.production
+# .env.staging
+# .env.test
+# .env*.local
 
 # Security
 *.pem

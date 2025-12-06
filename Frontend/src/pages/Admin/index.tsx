@@ -10,7 +10,7 @@ const Admin: FC = memo(() => {
                 <div className="container mx-auto px-4 py-8">
                     <h1 className="text-4xl font-bold text-gray-800 mb-4">Admin Dashboard</h1>
                     <div className="bg-white rounded-lg shadow p-6">
-                        <p className="text-gray-600">Welcome to Admin panel</p>
+                        <p className="text-gray-600">Welcome to Admin panel!</p>
                     </div>
                 </div>
             </main>
