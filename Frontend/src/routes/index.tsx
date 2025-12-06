@@ -38,7 +38,7 @@ const routesConfig: RouteConfigItem[] = [
         isRestricted: false,
     },
     {
-        path: "/admin",
+        path: "/admin/*",
         component: Admin,
         isProtected: true,
         requiredRole: USER_ROLES.ADMIN,

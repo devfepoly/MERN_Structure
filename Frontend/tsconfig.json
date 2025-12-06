@@ -28,9 +28,9 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "noImplicitAny": false,
+        "ignoreDeprecations": "6.0",
         // Path Aliases
         "baseUrl": ".",
-        "ignoreDeprecations": "6.0",
         "paths": {
             "@/*": [
                 "./src/*"
